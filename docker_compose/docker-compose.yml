@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  jupyter:
+    build:
+      context: C:\Users\vkhdk\github\docker_ETL\docker_files\
+      dockerfile: dockerfile_jupyter
+    volumes:
+      - C:\Vova_folder\docker_ETL\file_share:/home/jovyan/work
+    ports:
+      - "8888:8888"
